@@ -8,6 +8,8 @@
 
 #### This project is forked from the original [secgroundzero/warberry project](https://github.com/secgroundzero/warberry) and updated to be Python 3 compatible.
 
+-- PLEASE NOTE : Migration from Warberry3 to OpenPenTest is in progress and is expected to complete in August 2025. During this time, some functionality may not work whilst the migration is in progress.
+
 The original author stopped maintaining the secgroundzero/warberry project in November 2019. 
  
 **WarBerryPi** was built to be used as a hardware implant during red teaming scenarios where we want to obtain as much information as possible in a short period of time with being as stealthy as possible. 
