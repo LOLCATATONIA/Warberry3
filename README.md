@@ -65,7 +65,7 @@ Options:
 
 ### Environment
 
-Warberry3 is designed to be run as root, otherwsise some modules will fail to install and/or run corectly.
+Warberry3 is designed to be run as root, otherwise some modules will fail to install and/or run corectly.
 
 On some systems, it may be necessary for Warberry3 to be installed and run from inside a Python Vertual Envirnment.
 
@@ -87,7 +87,7 @@ sudo apt-get update && sudo apt-get upgrade
 sudo apt-get upgrade python3
 
 git clone https://github.com/christyler80/Warberry3.git
-cd warberry3
+cd Warberry3
 chmod 755 *.sh
 
 As root user (or sudo su)
@@ -102,7 +102,7 @@ deactivate                                When you're finished with your virtual
 ```
 
 
-#### To address the issue with ImportError: No module named dns follow these steps
+#### To address the issue with 'ImportError: No module named dns' follow these steps
 
 ```
 git clone https://github.com/rthalley/dnspython
