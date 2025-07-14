@@ -85,6 +85,7 @@ deactivate                                When you're finished with your virtual
 ```
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get upgrade python3
+sudo apt-get install python3.13-venv
 
 git clone https://github.com/christyler80/Warberry3.git
 cd Warberry3
