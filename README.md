@@ -140,4 +140,4 @@ On your webserver, change file 'Config.php' under 'WarberryReporting/SQLiteConne
 
 Also change 'db_hostnames.php' and 'db_tables.php' to use the correct path of 'warberry.db'. 
 
-In your web browser, run the webite URL that you created - e.g. http://localhost:8001/warberry/ for this example.
+In your web browser, run the webite URL that you created - e.g. http://localhost/warberry/ for this example.
