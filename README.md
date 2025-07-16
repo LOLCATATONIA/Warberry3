@@ -128,11 +128,16 @@ deactivate                                When you're finished with your virtual
 
 ### Reporting 
 
-Download the **/RESULTS** folder into /var/www, /Library/Webserver/Documents/  or XAMPP web directory depending on your OS and setup.
+Warberry reporting requires a web server with PHP and Sqlite3 support.
 
-Download the warberry.db file locally and save it into **Reporting/** .
+'xampp' from https://www.apachefriends.org is a good option for development and testing, but other web server should work well.
 
-Change file Config.php under Reporting/WarberryReporting/SQLiteConnection/php to use the correct path of warberry.db
+On your webserver, create a new website folder. For example using Apache, create folder 'warberry' (without quotes) in the 'htdocs' folder.
 
-Run index.html under **Reporting/**
+Copy into the folder you created on your webserver (e.g 'warberry'), all of the WarberryPi files and sub-folders from under 'Reporting', 'Results' and also 'warberry.db'.
 
+On your webserver, change file 'Config.php' under 'WarberryReporting/SQLiteConnection/php' to use the correct path of 'warberry.db'. 
+
+Also change 'db_hostnames.php' and 'db_tables.php' to use the correct path of 'warberry.db'. 
+
+In your web browser, run the webite URL that you created - e.g. http://localhost:8001/warberry/ for this example.
