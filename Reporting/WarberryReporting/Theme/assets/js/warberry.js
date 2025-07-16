@@ -1,4 +1,9 @@
-var connectService = 'http://localhost:8001/warberry/WarberryReporting/SQLiteConnection/home.php';
+//var siteUrl = 'http://localhost:8001/warberry/';   // xammpp with Apache runnong on port 8001
+//var connectService = siteUrl+'WarberryReporting/SQLiteConnection/home.php';
+var siteUrl = window.location.href;
+var connectService = siteUrl.substring(0, siteUrl.lastIndexOf('/')+1)+'WarberryReporting/SQLiteConnection/home.php';
+//window.alert(connectService);
+
 $.ajax({
     type: "GET",
     url: connectService,
