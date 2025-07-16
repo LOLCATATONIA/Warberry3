@@ -128,7 +128,7 @@ deactivate                                When you're finished with your virtual
 
 ### Reporting 
 
-Warberry reporting requires a web server with PHP and Sqlite3 support.
+Warberry reporting requires a web server with PHP and SQLite3 support.
 
 'xampp' from https://www.apachefriends.org is a good option for development and testing, but other web server should work well.
 
