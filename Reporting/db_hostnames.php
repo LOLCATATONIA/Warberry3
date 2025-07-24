@@ -1,7 +1,6 @@
 <?php
 #const PATH_TO_SQLITE_FILE = '/Library/WebServer/Documents/Reporting/WarberryReporting/SQLiteConnection/db/warberry.db';
-const PATH_TO_SQLITE_FILE = 'C:\PortableApps\xampp\htdocs\warberry\WarberryReporting\SQLiteConnection\php\db\warberry.db';
-#const PATH_TO_SQLITE_FILE = './WarberryReporting/SQLiteConnection/db/warberry.db';
+const PATH_TO_SQLITE_FILE = 'C:\Development\WordPress\xampp\htdocs\warberry\warberry.db'; // e.g. xampp installed in folder 'C:\Development\WordPress'
 class MyDB extends SQLite3
     {
     function __construct()

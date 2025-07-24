@@ -1,5 +1,13 @@
-var siteUrl = 'http://localhost:8001/warberry/';
-var connectService = siteUrl+'WarberryReporting/SQLiteConnection/reporting.php';
+//var siteUrl = 'http://localhost:8001/warberry/';   // xammpp with Apache runnong on port 8001
+//var connectService = siteUrl+'WarberryReporting/SQLiteConnection/home.php';
+var siteUrl = window.location.href;
+var connectService = siteUrl.substring(0, siteUrl.lastIndexOf('/')+1)+'WarberryReporting/SQLiteConnection/home.php';
+//window.alert(connectService);
+
+var location = window.location.href;
+var directoryPath = substring(0, location.lastIndexOf('/'));;
+window.alert(directoryPath );
+
 var sessionID=findSession();
 if (sessionID==-1){
     console.log("No sessions found");

@@ -6,7 +6,7 @@
 [![Python 2.6|2.7](https://img.shields.io/badge/python-2.6|2.7-yellow.svg)](https://www.python.org/)
 [![Python 3.7](https://user-images.githubusercontent.com/24506694/120064697-78738a80-c065-11eb-844b-00966884b20a.png)](https://www.python.org/)
 
-#### PLEASE NOTE : Warberry3 is moving to become OpenPenTest and this work expected to complete in Q3 2025. During this time, the current code is not being mantained and some functionality may not work whilst the migration is in progress.
+#### PLEASE NOTE : Warberry3 is moving to become OpenPenTest and this work is expected to complete in Q4 2025. During this time, the current code is not being mantained and some functionality may not work whilst the migration is in progress.
 
 This project is forked from the original [secgroundzero/warberry project](https://github.com/secgroundzero/warberry) and updated to be Python 3 compatible.
 
@@ -65,7 +65,7 @@ Options:
 
 ### Environment
 
-Warberry3 is designed to be run as root, otherwsise some modules will fail to install and/or run corectly.
+Warberry3 is designed to be run as root, otherwise some modules will fail to install and/or run corectly.
 
 On some systems, it may be necessary for Warberry3 to be installed and run from inside a Python Vertual Envirnment.
 
@@ -85,9 +85,10 @@ deactivate                                When you're finished with your virtual
 ```
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get upgrade python3
+sudo apt-get install python3.13-venv
 
 git clone https://github.com/christyler80/Warberry3.git
-cd warberry3
+cd Warberry3
 chmod 755 *.sh
 
 As root user (or sudo su)
@@ -102,7 +103,7 @@ deactivate                                When you're finished with your virtual
 ```
 
 
-#### To address the issue with ImportError: No module named dns follow these steps
+#### To address the issue with 'ImportError: No module named dns' follow these steps
 
 ```
 git clone https://github.com/rthalley/dnspython
@@ -127,11 +128,16 @@ deactivate                                When you're finished with your virtual
 
 ### Reporting 
 
-Download the **/RESULTS** folder into /var/www, /Library/Webserver/Documents/  or XAMPP web directory depending on your OS and setup.
+Warberry reporting requires a web server with PHP and SQLite3 support.
 
-Download the warberry.db file locally and save it into **Reporting/** .
+'xampp' from https://www.apachefriends.org is a good option for development and testing, but other web server should work well.
 
-Change file Config.php under Reporting/WarberryReporting/SQLiteConnection/php to use the correct path of warberry.db
+On your webserver, create a new website folder. For example using Apache, create folder 'warberry' (without quotes) in the 'htdocs' folder.
 
-Run index.html under **Reporting/**
+Copy into the folder you created on your webserver (e.g 'warberry'), all of the WarberryPi files and sub-folders from under 'Reporting', 'Results' and also 'warberry.db'.
 
+On your webserver, change file 'Config.php' under 'WarberryReporting/SQLiteConnection/php' to use the correct path of 'warberry.db'. 
+
+Also change 'db_hostnames.php' and 'db_tables.php' to use the correct path of 'warberry.db'. 
+
+In your web browser, run the webite URL that you created - e.g. http://localhost/warberry/ for this example.
