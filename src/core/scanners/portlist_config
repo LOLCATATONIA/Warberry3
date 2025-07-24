@@ -12,6 +12,7 @@
 ../Results/webservers8181,webservers8181,,Web Servers Running on Port 8181,8181,n
 ../Results/webservers9090,webservers9090,,Web Servers Running on Port 9090,9090,n
 ../Results/printers,printers,,Printers,8611.8612.5222.5223,n
+../Results/ssh,ssh,,SSH,23,n
 ../Results/telnet,telnet,,Telnet,23,n
 ../Results/mongo,mongo,,Mongo Databases,27017.27018.27019.28017,n
 ../Results/vnc,vnc,,VNC,5900,n
